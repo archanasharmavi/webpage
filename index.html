@@ -45,7 +45,7 @@
 // 	ext: 'jpg'
 // }).addTo(map)
 
-var wmsLayer = L.tileLayer.wms("http://localhost:8080/geoserver/task/wms?service=WMS", {
+var wmsLayer = L.tileLayer.wms("http://localhost:8080/geoserver/task/wms?service=WMS&version=1.1.0&request=GetMap&layers=task%3Aworld-administrative-boundaries&bbox=-179.9999899999999%2C-58.49860999999993%2C179.99999000000003%2C83.62360000000007&width=768&height=330&srs=EPSG%3A4326&styles=&format=text%2Fhtml%3B%20subtype%3Dopenlayers#toggle", {
     layers: "world-administrative-boundaries",
     format: "image/png",
     transparent: true,
