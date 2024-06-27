@@ -257,7 +257,7 @@ L.Geoserver.wmsImage = function (baseLayerUrl, options) {
 // }).addTo(map)
 
 var wmsLayer = L.tileLayer.wms("http://localhost:8080/geoserver/task/wms?service=WMS", {
-    layers: "Seram_Timur_Project_Boundary",
+    layers: "world-administrative-boundaries",
     format: "image/png",
     transparent: true,
     
